@@ -40,6 +40,8 @@
             <groupId>com.xdl.maven</groupId>
             <artifactId>pro01-maven-java</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <!-- 依赖范围默认是compile-->
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
