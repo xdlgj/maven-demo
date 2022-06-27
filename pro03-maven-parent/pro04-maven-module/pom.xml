@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <!--parent标签给当前工程配置父工程-->
+  <parent>
+    <groupId>com.xdl.maven</groupId>
+    <artifactId>pro03-maven-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <!--子工程的groupId如果和父工程一样，则可以省略-->
+  <groupId>com.xdl.maven</groupId>
+  <artifactId>pro04-maven-module</artifactId>
+  <!--子工程的version如果和父工程一样，则可以省略-->
+  <version>1.0-SNAPSHOT</version>
+  <name>pro04-maven-module</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <!--对于已经在父工程进行了管理依赖，子工程中引用时可以不写version
+        如果写了则以自己的为准，绝大部分是和父工程保持一致
+      -->
+    </dependency>
+  </dependencies>
+</project>

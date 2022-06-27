@@ -42,6 +42,15 @@
             <version>1.0-SNAPSHOT</version>
             <!-- 依赖范围默认是compile-->
             <scope>compile</scope>
+            <!--配置依赖排除-->
+            <exclusions>
+                <!--配置具体排除信息，让commons-logging不要传递到当前工程（pro2-maven-web）-->
+                <exclusion>
+                    <!--这里指定坐标时不需要指定version-->
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 </project>

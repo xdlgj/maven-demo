@@ -31,5 +31,12 @@
       <!-- 配置当前依赖的范围-->
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>4.0.0.RELEASE</version>
+    </dependency>
+
   </dependencies>
 </project>
