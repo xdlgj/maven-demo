@@ -22,8 +22,6 @@
   <!--聚合配置-->
   <modules>
     <module>pro04-maven-module</module>
-    <module>pro05-maven-module</module>
-    <module>pro06.maven.module</module>
   </modules>
   <!--在父工程中统一管理依赖信息-->
   <!--注意:即使在父工程中配置了对依赖的管理，子工程需要使用具体哪一个依赖还是需要明确配置。-->
