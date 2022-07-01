@@ -1,6 +1,6 @@
 package com.xdl.maven.imperial.entity;
 
-public class EMP {
+public class Emp {
     private Integer empId;
     private String empName;
     private String empPosition;
@@ -8,12 +8,12 @@ public class EMP {
     private String loginPassword;
 
     // 无参构造方法
-    public EMP() {
+    public Emp() {
         //无参构造方法
     }
 
     // 全参构造方法
-    public EMP(Integer empId, String empName, String empPosition, String loginAccount, String loginPassword) {
+    public Emp(Integer empId, String empName, String empPosition, String loginAccount, String loginPassword) {
         this.empId = empId;
         this.empName = empName;
         this.empPosition = empPosition;
