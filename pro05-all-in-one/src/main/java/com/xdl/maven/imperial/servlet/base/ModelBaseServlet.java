@@ -1,4 +1,4 @@
-package com.xdl.maven.imperial.court.servlet.base;
+package com.xdl.maven.imperial.servlet.base;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

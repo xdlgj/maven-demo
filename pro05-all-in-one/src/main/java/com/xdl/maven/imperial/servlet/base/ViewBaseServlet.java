@@ -1,4 +1,4 @@
-package com.xdl.maven.imperial.court.servlet.base;
+package com.xdl.maven.imperial.servlet.base;
 
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
