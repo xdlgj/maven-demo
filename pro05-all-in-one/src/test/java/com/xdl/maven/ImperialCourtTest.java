@@ -34,10 +34,24 @@ public class ImperialCourtTest {
             System.out.println("emp = " + emp);
         }
     }
+
     @Test
     public void testA() {
         String sql = "update t_emp set emp_name=? where emp_id=?";
         int affectedRows = baseDao.update(sql, "爱新觉罗·玄烨", 1);
         System.out.println("affectedRows = " + affectedRows);
+    }
+
+    @Test
+    public void testSubstring() {
+        // 最后一个点的坐标位置
+        String str = "a.aa.png";
+        int i = str.lastIndexOf(".");
+        System.out.println(i);
+        // .png
+        String substring = str.substring(i);
+        System.out.println(substring);
+
+
     }
 }
