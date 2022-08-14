@@ -3,6 +3,7 @@ package com.xdl.maven;
 import com.xdl.maven.imperial.dao.BaseDao;
 import com.xdl.maven.imperial.entity.Emp;
 import com.xdl.maven.imperial.util.JDBCUtils;
+import com.xdl.maven.imperial.util.MD5Util;
 import org.junit.Test;
 
 import java.sql.Connection;
@@ -51,7 +52,10 @@ public class ImperialCourtTest {
         // .png
         String substring = str.substring(i);
         System.out.println(substring);
-
-
+    }
+    @Test
+    public void testMd5 () {
+        String encode = MD5Util.encode("123");
+        System.out.println(encode);
     }
 }
