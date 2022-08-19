@@ -29,8 +29,11 @@ public class AuthorServlet extends ModelBaseServlet {
            //4、将查询到的emp信息保存到session域中
            session.setAttribute(ImperialCourtConst.LOGIN_EMP_ATTR_NAME, emp);
            //5、前往指定页面视图
-           String templateName = "temp";
-           processTemplate(templateName, request, response);
+           //String templateName = "memorials-list";
+           //processTemplate(templateName, request, response);
+           // 前往正式的目标地址
+           response.sendRedirect(request.getContextPath() + "/work?method=showMemorialsDigestList");
+
        } catch (Exception e) {
            e.printStackTrace();
            //6、判断此处捕获的异常是否是登录失败异常

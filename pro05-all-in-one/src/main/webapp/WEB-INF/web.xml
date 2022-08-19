@@ -41,4 +41,13 @@
         <servlet-name>authorServlet</servlet-name>
         <url-pattern>/auth</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>workServlet</servlet-name>
+        <servlet-class>com.xdl.maven.imperial.servlet.module.WorkServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>workServlet</servlet-name>
+        <url-pattern>/work</url-pattern>
+    </servlet-mapping>
+
 </web-app>
