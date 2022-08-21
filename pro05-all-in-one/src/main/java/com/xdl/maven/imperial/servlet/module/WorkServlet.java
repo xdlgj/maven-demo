@@ -6,6 +6,7 @@ import com.xdl.maven.imperial.service.api.MemorialsService;
 import com.xdl.maven.imperial.service.impl.MemorialsServiceImpl;
 import com.xdl.maven.imperial.servlet.base.ModelBaseServlet;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -49,5 +50,18 @@ public class WorkServlet extends ModelBaseServlet {
         // 4、 解析渲染视图
         String templateName = "memorials-detail";
         processTemplate(templateName, request, response);
+    }
+
+    protected void feedBack(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        // 获取表单提交的请求参数
+        String memorialsId = request.getParameter("memorialsId");
+        String feedbackContent = request.getParameter("feedbackContent");
+
+        // 执行更新
+        memorialsService.updateMemorialsFeedBack(memorialsId, feedbackContent);
+
+        // 重定向回显示奏折列表页面
+        response.sendRedirect(request.getContextPath() + "/work?method=showMemorialsDigestList");
     }
 }

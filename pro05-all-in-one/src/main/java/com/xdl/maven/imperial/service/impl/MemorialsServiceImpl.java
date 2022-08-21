@@ -24,4 +24,9 @@ public class MemorialsServiceImpl implements MemorialsService {
     public void updateMemorialsStatusToRead(String memorialsId) {
         memorialsDao.updateMemorialsStatusToRead(memorialsId);
     }
+
+    @Override
+    public void updateMemorialsFeedBack(String memorialsId, String feedbackContent) {
+        memorialsDao.updateMemorialsFeedBack(memorialsId, feedbackContent);
+    }
 }

@@ -11,4 +11,6 @@ public interface MemorialsService {
     Memorials getMemorialsDetailById(String memorialsId);
 
     void updateMemorialsStatusToRead(String memorialsId);
+
+    void updateMemorialsFeedBack(String memorialsId, String feedbackContent);
 }
