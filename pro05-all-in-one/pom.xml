@@ -54,5 +54,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <!-- 对构建过程进行自己的定制 -->
+    <build>
+        <!-- 当前工程在构建过程中使用的最终名称 -->
+        <finalName>demo-me</finalName>
+    </build>
 </project>
